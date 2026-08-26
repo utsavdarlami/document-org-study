@@ -278,8 +278,8 @@ mark {
   background: #f7f7f5;
 }
 .flow-card {
-  width: 285px;
-  height: 225px;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   padding: 20px;
   border: 1px solid #d8d8d3;
@@ -307,9 +307,6 @@ mark {
   font:
     500 14px / 1.55 "Newsreader",
     serif;
-}
-.react-flow__node {
-  width: 285px;
 }
 .react-flow__controls {
   border: 1px solid #deded9;

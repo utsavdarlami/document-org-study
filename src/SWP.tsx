@@ -2,6 +2,7 @@ import { useEffect, useMemo } from "react";
 import {
   Background,
   Controls,
+  NodeResizer,
   ReactFlow,
   useNodesState,
   type Node,
@@ -17,18 +18,26 @@ type Props = {
 
 type DocumentNode = Node<{ document: Document; query: string }, "document">;
 
-function DocumentCard({ data }: NodeProps<DocumentNode>) {
+function DocumentCard({ data, selected }: NodeProps<DocumentNode>) {
   const found =
     Boolean(data.query.trim()) && matches(data.document, data.query);
   return (
-    <article className={`flow-card ${found ? "match" : ""}`}>
-      <h3>
-        <Highlight text={data.document.title} query={data.query} />
-      </h3>
-      <p>
-        <Highlight text={data.document.content} query={data.query} />
-      </p>
-    </article>
+    <>
+      <NodeResizer
+        isVisible={selected}
+        minWidth={220}
+        minHeight={150}
+        color="#777771"
+      />
+      <article className={`flow-card ${found ? "match" : ""}`}>
+        <h3>
+          <Highlight text={data.document.title} query={data.query} />
+        </h3>
+        <p>
+          <Highlight text={data.document.content} query={data.query} />
+        </p>
+      </article>
+    </>
   );
 }
 
@@ -41,6 +50,7 @@ const makeNodes = (documents: Document[]): DocumentNode[] =>
       y: 55 + Math.floor(index / 3) * 285,
     },
     data: { document, query: "" },
+    style: { width: 285, height: 225 },
     draggable: true,
     connectable: false,
   }));
