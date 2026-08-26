@@ -2,6 +2,8 @@
 
 A minimal React app for comparing two ways of reviewing and organizing the same document collection.
 
+## Intial design (based on which we have created this system)
+
 ![NOS and SWP interface reference](image.png)
 
 ## Interfaces

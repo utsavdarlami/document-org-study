@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useEffect } from "react";
 import {
   Background,
   Controls,
@@ -41,6 +41,8 @@ function DocumentCard({ data, selected }: NodeProps<DocumentNode>) {
   );
 }
 
+const NODE_TYPES = { document: DocumentCard };
+
 const makeNodes = (documents: Document[]): DocumentNode[] =>
   documents.map((document, index) => ({
     id: document.id,
@@ -59,8 +61,6 @@ export function SWP({ documents, query, setQuery }: Props) {
   const [nodes, setNodes, onNodesChange] = useNodesState<DocumentNode>(
     makeNodes(documents),
   );
-  const nodeTypes = useMemo(() => ({ document: DocumentCard }), []);
-
   useEffect(() => {
     setNodes((current) =>
       current.map((node) => ({ ...node, data: { ...node.data, query } })),
@@ -83,7 +83,7 @@ export function SWP({ documents, query, setQuery }: Props) {
       <div className="canvas">
         <ReactFlow
           nodes={nodes}
-          nodeTypes={nodeTypes}
+          nodeTypes={NODE_TYPES}
           onNodesChange={onNodesChange}
           nodesConnectable={false}
           elementsSelectable

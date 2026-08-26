@@ -1,9 +1,9 @@
-import { useState, type ChangeEvent, type ReactNode } from "react";
+import { useState, type ChangeEvent } from "react";
 import { parseDocuments, type Document } from "./documents.tsx";
 import { NOS } from "./NOS.tsx";
 import { SWP } from "./SWP.tsx";
 
-export default function App(): ReactNode {
+export default function App() {
   const [mode, setMode] = useState<"nos" | "swp">("nos");
   const [query, setQuery] = useState("");
   const [documents, setDocuments] = useState<Document[]>([]);
@@ -72,7 +72,12 @@ export default function App(): ReactNode {
           </p>
         </main>
       ) : mode === "nos" ? (
-        <NOS documents={documents} query={query} setQuery={setQuery} />
+        <NOS
+          documents={documents}
+          query={query}
+          setQuery={setQuery}
+          onReorder={setDocuments}
+        />
       ) : (
         <SWP documents={documents} query={query} setQuery={setQuery} />
       )}
