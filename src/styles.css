@@ -114,8 +114,7 @@ button {
   display: grid;
   grid-template-columns: minmax(280px, 350px) 1fr;
   height: calc(100vh - 100px);
-  max-width: 1220px;
-  margin: 28px auto 0;
+  margin: 28px 0 0;
   background: white;
   border: 1px solid #deded9;
   border-radius: 14px;
