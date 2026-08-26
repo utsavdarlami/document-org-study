@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "documents": [
+    {
+      "id": "versailles",
+      "title": "The Treaty of Versailles",
+      "content": "Representatives of the Allied powers gathered in Paris after the fighting had ended. The settlement required Germany to accept responsibility for the war, surrender territory, reduce its armed forces, and pay reparations. Many Germans regarded these terms as humiliating, creating resentment that endured through the difficult years that followed.",
+      "metadata": {}
+    },
+    {
+      "id": "economic-crisis",
+      "title": "Economic Crisis",
+      "content": "A collapse on Wall Street spread quickly through the world economy. German banks failed, factories closed, and unemployment rose into the millions. As faith in the existing government weakened, political movements promising decisive action and national recovery attracted growing support.",
+      "metadata": {}
+    },
+    {
+      "id": "rise-nationalism",
+      "title": "Rise of Nationalism",
+      "content": "Economic hardship and anger over the postwar settlement helped radical nationalist groups gain followers. Their campaigns blamed democratic leaders and minority communities for Germany’s problems. Large rallies, modern propaganda, and promises to restore national strength transformed a fringe movement into a major political force.",
+      "metadata": {}
+    },
+    {
+      "id": "chancellor",
+      "title": "Hitler Becomes Chancellor",
+      "content": "After repeated elections failed to produce a stable governing majority, conservative politicians persuaded President Hindenburg to appoint Adolf Hitler as chancellor. They believed they could control him inside a coalition cabinet, but the appointment gave his movement command of the national government.",
+      "metadata": {}
+    },
+    {
+      "id": "enabling-act",
+      "title": "The Enabling Act",
+      "content": "Following a fire in the parliament building and the arrest of political opponents, lawmakers voted under intense pressure to let the cabinet make laws without parliamentary consent. This measure dismantled constitutional checks and allowed the new government to establish a dictatorship.",
+      "metadata": {}
+    },
+    {
+      "id": "rhineland",
+      "title": "Remilitarization of the Rhineland",
+      "content": "German troops entered the demilitarized Rhineland in direct violation of the postwar agreements. France and Britain protested but did not intervene. The successful gamble strengthened Hitler at home and encouraged his government to take greater risks in foreign policy.",
+      "metadata": {}
+    },
+    {
+      "id": "anschluss",
+      "title": "Anschluss",
+      "content": "German forces crossed into Austria after sustained political pressure on its government. Austria was incorporated into Germany and the union was proclaimed to cheering crowds, although opponents were arrested. Other European powers accepted the annexation without military action.",
+      "metadata": {}
+    },
+    {
+      "id": "munich",
+      "title": "The Munich Agreement",
+      "content": "Britain, France, Germany, and Italy met to settle the crisis over the Sudetenland. Czechoslovakia was not represented when the territory was transferred to Germany. British leaders hoped the concession would preserve peace, while Germany gained strategic land and defenses.",
+      "metadata": {}
+    },
+    {
+      "id": "war",
+      "title": "Outbreak of War",
+      "content": "German forces invaded Poland using coordinated aircraft, armor, and infantry. Britain and France responded by declaring war on Germany. The invasion followed a non-aggression pact that secretly divided areas of eastern Europe between Germany and the Soviet Union.",
+      "metadata": {}
+    }
+  ]
+}
