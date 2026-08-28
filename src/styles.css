@@ -132,8 +132,8 @@ button {
 .nos {
   display: grid;
   grid-template-columns: minmax(280px, 350px) 1fr;
-  height: calc(100vh - 100px);
-  margin: 28px 0 0;
+  height: calc(100vh - 84px);
+  margin: 12px 0 0;
   background: white;
   border: 1px solid #deded9;
   border-radius: 14px;
@@ -273,24 +273,31 @@ mark {
 }
 
 .swp {
-  height: calc(100vh - 100px);
-  margin-top: 28px;
+  height: calc(100vh - 84px);
+  margin-top: 12px;
   border: 1px solid #deded9;
   border-radius: 14px;
   overflow: hidden;
   background: white;
 }
 .canvas-toolbar {
-  height: 72px;
-  padding: 0 22px;
+  height: 60px;
+  padding: 0 18px;
   border-bottom: 1px solid #deded9;
+}
+.canvas-toolbar .eyebrow {
+  margin-bottom: 2px;
+  font-size: 10px;
+}
+.canvas-toolbar h2 {
+  font-size: 17px;
 }
 .canvas-toolbar .search {
   width: min(340px, 42vw);
   margin: 0;
 }
 .canvas {
-  height: calc(100% - 72px);
+  height: calc(100% - 60px);
   background: #f7f7f5;
 }
 .flow-card {

@@ -52,7 +52,7 @@ const makeNodes = (documents: Document[]): DocumentNode[] =>
       y: 55 + Math.floor(index / 3) * 285,
     },
     data: { document, query: "" },
-    style: { width: 285, height: 225 },
+    style: { width: 285 },
     draggable: true,
     connectable: false,
   }));
