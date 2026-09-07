@@ -13,6 +13,12 @@ A minimal React app for comparing two ways of reviewing and organizing the same 
 
 Neither interface displays document dates. Participants must infer a timeline from document content alone.
 
+## Study metrics
+
+Metrics reset when a JSON collection is loaded. NOS counts each successful list reorder. SWP counts each completed card drag and accumulates its Euclidean distance in canvas pixels, both overall and for each card. Initial and current area are the axis-aligned bounding-box area around all spatial cards, including their resized dimensions; the current value becomes the final value when the session ends.
+
+Use **Export stats** to review the measurements in a confirmation dialog before downloading them as JSON. Updates are also logged to the browser console for debugging.
+
 ## Run locally
 
 ```bash

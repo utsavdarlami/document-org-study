@@ -7,9 +7,10 @@ type Props = {
   query: string;
   setQuery: (query: string) => void;
   onReorder: (documents: Document[]) => void;
+  onMove: () => void;
 };
 
-export function NOS({ documents, query, setQuery, onReorder }: Props) {
+export function NOS({ documents, query, setQuery, onReorder, onMove }: Props) {
   const [selectedId, setSelectedId] = useState(documents[0].id);
   const selected =
     documents.find((document) => document.id === selectedId) ?? documents[0];
@@ -31,6 +32,7 @@ export function NOS({ documents, query, setQuery, onReorder }: Props) {
     const [moved] = reordered.splice(sourceIndex, 1);
     reordered.splice(targetIndex, 0, moved);
     onReorder(reordered);
+    onMove();
   };
 
   return (
